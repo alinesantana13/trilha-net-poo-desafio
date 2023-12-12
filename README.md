@@ -30,12 +30,15 @@ dotnet test
 ## Proposta
 O sistema foi criado em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. De acordo com o diagrama baixo:
 
-<img src="./Imagens/diagrama.png" width="600">
+<img src="./Imagens/diagrama.png" width="700">
 
 ## Regras e validações seguidas
 1. A classe **Smartphone** é abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** são classes filhas de Smartphone.
+2. A classe **Nokia** e **iPhone** são classes filhas de Smartphone.
 3. O método **InstalarAplicativo** é sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+
+## Testes unitários
+No projeto são utilizados testes unitários xUnit para as classes Nokia e iPhone, para verificar se as mensagens estão sendo exibidas como esperado.
 
 ## Ferramentas utilizadas ⛏️
 <img src="./Imagens/DotNet.svg" width="48"> <img src="./Imagens/CS.svg" width="48"> 
