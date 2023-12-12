@@ -1,22 +1,42 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Menu Suspenso para Sistema de Celular 📲
+#### Trilha .NET - Programação orientada a objetos
+Esse projeto foi elaborado durante o Bootcamp do **Decola Tech 2024** pela DIO, se trata de uma aplicação dos conceitos de POO utilizando C#. Nessa aplicação, a partir de um menu suspenso o usuário escolhe a marca do smartphone, e se deseja fazer uma ligação, receber ligação ou instalar um aplicativo. Com base em cada escolha será exibido uma mensagem.
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+## Rodando o projeto
+Obs.: Para rodar é necessário ter instalado .NET versão 6.0.
+```
+git clone link
+```
+Para acessar o Program.cs: 
+1º Acesse a pasta Desafio
+2º Digite no terminal o comando abaixo
+```
+dotnet run
+```
+Para acessar os testes unitários: 
+1º Acesse a pasta Tests
+2º Digite no terminal o comando abaixo
+```
+dotnet test
+```
+## Funcionalidades ☑️
+- Escolher marca de celular
+- Decidir qual operação fará com a marca escolhida, que pode ser uma das listadas abaixo.
+    - Ligar
+    - Receber ligação
+    - Instalar aplicativo
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
 
 ## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+O sistema foi criado em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. De acordo com o diagrama baixo:
 
-![Diagrama classes](Imagens/diagrama.png)
+<img src="./Imagens/diagrama.png" width="600">
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## Regras e validações seguidas
+1. A classe **Smartphone** é abstrata, não permitindo instanciar e servindo apenas como modelo.
+2. A classe **Nokia** e **Iphone** são classes filhas de Smartphone.
+3. O método **InstalarAplicativo** é sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Ferramentas utilizadas ⛏️
+<img src="./Imagens/DotNet.svg" width="48"> <img src="./Imagens/CS.svg" width="48"> 
+
